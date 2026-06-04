@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Build output
+dist/
+
+# Local data (JSON fallback)
+server/data/
+server/uploads/
+
+# Logs
+*.log
+*.err
+backend-dev.log
+backend-dev.err
+frontend-dev.log
+frontend-dev.err
+
+# Test artifacts
+smoke-test/output/
+tests/screenshots/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.pid

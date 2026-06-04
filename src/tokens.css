@@ -1,0 +1,60 @@
+/* ═══════════════════════════════════════════════════════════ */
+/*  SHARED DESIGN TOKENS — AI Assistant UI + Blueprint System */
+/*  Version: v2.1.0-unified                                      */
+/*  Do not edit unless architecture decision is made.           */
+/* ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── BACKGROUND LAYERS ── */
+  --bg-deep:          #0a0a0a;   /* sidebar, deepest layer */
+  --bg-main:          #141414;   /* main canvas area */
+  --bg-panel:         #141414;   /* right panels */
+  --bg-input:         #1c1c1c;   /* elevated input surfaces */
+  --bg-card:          #1c1c1c;   /* cards, blocks */
+  --bg-notification:  #0f0f0f;   /* top notification bar */
+  --bg-hover:         rgba(255, 255, 255, 0.06);
+  --bg-active:        rgba(255, 255, 255, 0.08);
+  --bg-pill-dark:     #2a2a2a;
+  --bg-pill-hover:    #333333;
+
+  /* ── TEXT COLORS ── */
+  --text-primary:     #ffffff;
+  --text-secondary:   #8a8a8a;
+  --text-muted:       #5a5a5a;
+  --text-placeholder: #6b6b6b;
+
+  /* ── BORDERS ── */
+  --border-subtle:    rgba(255, 255, 255, 0.08);
+  --border-input:     rgba(255, 255, 255, 0.12);
+  --border-divider:   rgba(255, 255, 255, 0.10);
+  --border-focus:     rgba(255, 255, 255, 0.20);
+
+  /* ── SEMANTIC ACCENTS (muted to match monochrome aesthetic) ── */
+  --accent:           #ffffff;
+  --accent-dim:       #8a8a8a;
+  --warn:             #8a7a5a;   /* amber → muted warm gray */
+  --error:            #8a4a4a;   /* red → muted brick */
+  --success:          #4a6a4a;   /* green → muted forest */
+
+  /* ── TYPOGRAPHY ── */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Monaco, "Cascadia Code", Consolas, "Courier New", monospace;
+
+  /* ── RADIUS ── */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-full: 9999px;
+
+  /* ── LAYOUT CONSTANTS ── */
+  --sidebar-width:       80px;
+  --topbar-height:       48px;
+  --right-panel-width:   42%;
+  --right-panel-min:     400px;
+  --right-panel-max:     540px;
+
+  /* ── TRANSITIONS ── */
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.2s ease;
+}

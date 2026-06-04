@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: agent-system-ui
+    runtime: docker
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: agent-system-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: NODE_ENV
+        value: production
+      - key: USE_MOCK
+        value: true
+    healthCheckPath: /api/health
+
+databases:
+  - name: agent-system-db
+    plan: free
+    ipAllowList: []

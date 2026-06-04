@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  agent-system-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent-system-ui
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
